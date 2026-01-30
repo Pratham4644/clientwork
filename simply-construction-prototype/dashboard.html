@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Simply Construction</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <div class="dashboard-layout">
+    <aside class="dashboard-sidebar">
+      <div style="padding: var(--space-xl); border-bottom: 1px solid var(--color-secondary);"><a href="index.html"
+          style="font-family: var(--font-heading); font-weight: 700; color: var(--color-white);">Simply Construction</a>
+      </div>
+      <nav class="dashboard-sidebar__nav">
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="#">My Projects</a>
+        <a href="#">Messages</a>
+        <a href="#">Documents</a>
+        <a href="#">Invoices</a>
+        <a href="#">Profile Settings</a>
+        <a href="index.html" style="margin-top: var(--space-xl);">Back to Site</a>
+        <a href="login.html">Logout</a>
+      </nav>
+    </aside>
+    <main class="dashboard-main">
+      <h1 style="margin-bottom: var(--space-lg);">Welcome back</h1>
+      <p style="margin-bottom: var(--space-2xl); color: var(--color-text-muted);">Here's an overview of your account.
+      </p>
+      <div class="dashboard-cards">
+        <div class="dashboard-card">
+          <h3>Active Projects</h3>
+          <p class="number">3</p>
+        </div>
+        <div class="dashboard-card">
+          <h3>Messages</h3>
+          <p class="number">5</p>
+        </div>
+        <div class="dashboard-card">
+          <h3>Pending Invoices</h3>
+          <p class="number">1</p>
+        </div>
+        <div class="dashboard-card">
+          <h3>Documents</h3>
+          <p class="number">12</p>
+        </div>
+      </div>
+      <div style="margin-bottom: var(--space-2xl);">
+        <h2 style="margin-bottom: var(--space-md);">Active Projects</h2>
+        <div class="service-card" style="margin-bottom: var(--space-md);">
+          <h3>Modern Office Complex</h3>
+          <p>Status: In progress · 75% complete</p><a href="project-detail.html?id=1" class="btn btn--primary"
+            style="margin-top: var(--space-md);">View</a>
+        </div>
+        <div class="service-card" style="margin-bottom: var(--space-md);">
+          <h3>Residential Villa</h3>
+          <p>Status: Planning</p><a href="project-detail.html?id=2" class="btn btn--primary"
+            style="margin-top: var(--space-md);">View</a>
+        </div>
+      </div>
+      <div style="margin-bottom: var(--space-2xl);">
+        <h2 style="margin-bottom: var(--space-md);">Recent Activity</h2>
+        <ul style="list-style: none;">
+          <li
+            style="padding: var(--space-md); background: var(--color-white); border-radius: var(--radius-sm); margin-bottom: var(--space-sm);">
+            Document uploaded – Plan v2.pdf</li>
+          <li
+            style="padding: var(--space-md); background: var(--color-white); border-radius: var(--radius-sm); margin-bottom: var(--space-sm);">
+            Message from project manager</li>
+          <li style="padding: var(--space-md); background: var(--color-white); border-radius: var(--radius-sm);">Invoice
+            #1045 sent</li>
+        </ul>
+      </div>
+      <div>
+        <h2 style="margin-bottom: var(--space-md);">Quick Actions</h2><a href="contact.html" class="btn btn--primary"
+          style="margin-right: var(--space-sm);">Request a Quote</a><a href="projects.html"
+          class="btn btn--secondary">View Projects</a>
+      </div>
+    </main>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+</body>
+
+</html>

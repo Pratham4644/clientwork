@@ -1,0 +1,248 @@
+/* Simply Construction - Responsive Styles */
+/* Mobile-first: 320px - 767px | Tablet: 768px - 1023px | Desktop: 1024px - 1439px | Large: 1440px+ */
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .topbar__left {
+    gap: var(--space-2xl);
+  }
+
+  .hero__content {
+    padding: var(--space-3xl) 0;
+  }
+
+  .feature-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 var(--space-2xl);
+  }
+
+  .main-nav__list {
+    gap: var(--space-xl);
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1440px) {
+  .hero__title {
+    font-size: 4.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Mobile only */
+@media (max-width: 767px) {
+  .topbar {
+    display: none;
+  }
+
+  .topbar.show-mobile {
+    display: block;
+  }
+
+  .topbar .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    max-width: 85vw;
+    height: 100vh;
+    background: var(--color-white);
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+    z-index: var(--z-fixed);
+    padding: var(--space-4xl) var(--space-xl) var(--space-xl);
+    transition: right var(--transition-base);
+    overflow-y: auto;
+  }
+
+  .main-nav.open {
+    right: 0;
+  }
+
+  .main-nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .main-nav__link {
+    display: block;
+    padding: var(--space-md);
+    width: 100%;
+    border-bottom: 1px solid var(--color-light-gray);
+  }
+
+  .nav-dropdown__menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    padding-left: var(--space-lg);
+    margin-top: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-base);
+  }
+
+  .nav-dropdown.open .nav-dropdown__menu {
+    max-height: 500px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-search {
+    order: -1;
+  }
+
+  .hero {
+    min-height: 80vh;
+  }
+
+  .hero__arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+    left: var(--space-sm);
+  }
+
+  .hero__arrow--next {
+    right: var(--space-sm);
+  }
+
+  .feature-cards {
+    margin-top: calc(-1 * var(--space-2xl));
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+
+  .stat-item__number {
+    font-size: 2rem;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-bottom .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-sidebar {
+    position: fixed;
+    left: -260px;
+    top: 0;
+    bottom: 0;
+    width: 260px;
+    z-index: var(--z-fixed);
+    transition: left var(--transition-base);
+  }
+
+  .dashboard-sidebar.open {
+    left: 0;
+  }
+
+  .dashboard-main {
+    padding: var(--space-lg);
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-card--featured {
+    transform: none;
+  }
+
+  .filter-bar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .filter-btn {
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--text-xs);
+  }
+}
+
+/* Touch-friendly: minimum 44px tap targets */
+@media (pointer: coarse) {
+
+  .btn,
+  .main-nav__link,
+  .filter-btn,
+  .faq-item__question,
+  .hero__arrow,
+  .nav-search,
+  .menu-toggle {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .main-nav__link {
+    padding: var(--space-md) var(--space-lg);
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero__slide {
+    transition: none;
+  }
+
+  .feature-card:hover,
+  .service-card:hover,
+  .project-card:hover,
+  .blog-card:hover {
+    transform: none;
+  }
+}

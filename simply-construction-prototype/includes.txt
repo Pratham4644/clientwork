@@ -1,0 +1,5 @@
+HEADER_TOPBAR: same as index
+HEADER_NAV: same as index
+FOOTER: same as index
+CHATBOT: same as index
+SCRIPTS: same as index

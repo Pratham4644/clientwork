@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Simply Construction - Building trust since 1953. Residential, commercial, renovation & project management.">
+  <title>Simply Construction | We Build The Trust</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/chatbot.css">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__logo">Simply Construction</div>
+    <div class="preloader__bar">
+      <div class="preloader__progress"></div>
+    </div>
+  </div>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar__left">
+        <a href="tel:+0012455258365">(001) 2455 258 365</a>
+        <span>7:30 AM - 9:30 PM</span>
+      </div>
+      <div class="topbar__right">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="contact.html" class="btn btn--primary">GET NOW</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">
+        <span>Simply Construction</span>
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li><a href="index.html" class="main-nav__link active">Home</a></li>
+          <li><a href="about.html" class="main-nav__link">About</a></li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown__toggle main-nav__link">Services</button>
+            <ul class="nav-dropdown__menu">
+              <li><a href="services.html">All Services</a></li>
+              <li><a href="services.html#residential">Residential</a></li>
+              <li><a href="services.html#commercial">Commercial</a></li>
+              <li><a href="services.html#renovation">Renovation</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <button type="button" class="nav-dropdown__toggle main-nav__link">Pages</button>
+            <ul class="nav-dropdown__menu">
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="careers.html">Careers</a></li>
+              <li><a href="404.html">404 Page</a></li>
+            </ul>
+          </li>
+          <li><a href="projects.html" class="main-nav__link">Projects</a></li>
+          <li><a href="blog.html" class="main-nav__link">Blog</a></li>
+          <li><a href="contact.html" class="main-nav__link">Contact</a></li>
+          <li>
+            <button type="button" class="nav-search" aria-label="Open search">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.35-4.35" />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Search modal -->
+  <div class="search-modal" id="search-modal" aria-hidden="true">
+    <div class="search-modal__content container">
+      <button type="button" class="search-modal__close" aria-label="Close search">&times;</button>
+      <form class="search-modal__form" role="search">
+        <input type="search" placeholder="Search..." aria-label="Search">
+        <button type="submit" class="btn btn--primary">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__slider">
+      <div class="hero__slide"
+        style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920')" role="img"
+        aria-label="Construction site with crane"></div>
+      <div class="hero__slide"
+        style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920')" role="img"
+        aria-label="Modern building construction"></div>
+      <div class="hero__slide"
+        style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920')" role="img"
+        aria-label="Steel framework construction"></div>
+      <div class="hero__slide"
+        style="background-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1920')" role="img"
+        aria-label="Construction workers"></div>
+    </div>
+    <div class="hero__nav">
+      <div class="container">
+        <button type="button" class="hero__arrow hero__arrow--prev" aria-label="Previous slide">&lsaquo;</button>
+        <button type="button" class="hero__arrow hero__arrow--next" aria-label="Next slide">&rsaquo;</button>
+      </div>
+    </div>
+    <div class="container hero__content">
+      <p class="hero__eyebrow">Science 1953</p>
+      <h1 class="hero__title">We Build The Trust</h1>
+      <p class="hero__subtitle">On the other hand, we denounce with righteous indignation and dislike men who are so
+        beguiled and demoralized by the charms of pleasure of the moment.</p>
+      <a href="contact.html" class="btn btn--primary btn--large">Contact Us</a>
+      <a href="#" class="btn btn--outline btn--large" data-open-quote style="margin-left: var(--space-md);">Request
+        Quote</a>
+    </div>
+  </section>
+
+  <!-- Feature cards -->
+  <section class="section">
+    <div class="container">
+      <div class="feature-cards">
+        <div class="feature-card" data-reveal>
+          <div class="feature-card__icon" aria-hidden="true">&#9961;</div>
+          <h3 class="feature-card__title">Top Rated</h3>
+          <p class="feature-card__text">On the other hand, we denounce with righteous indignation and dislike men who
+            are so beguiled and demoralized by the charms of pleasure of the moment.</p>
+        </div>
+        <div class="feature-card" data-reveal>
+          <div class="feature-card__icon" aria-hidden="true">&#9989;</div>
+          <h3 class="feature-card__title">Best Quality</h3>
+          <p class="feature-card__text">On the other hand, we denounce with righteous indignation and dislike men who
+            are so beguiled and demoralized by the charms of pleasure of the moment.</p>
+        </div>
+        <div class="feature-card" data-reveal>
+          <div class="feature-card__icon" aria-hidden="true">&#36;</div>
+          <h3 class="feature-card__title">Low Cost</h3>
+          <p class="feature-card__text">On the other hand, we denounce with righteous indignation and dislike men who
+            are so beguiled and demoralized by the charms of pleasure of the moment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-title" data-reveal>
+        <p class="subtitle">About Us</p>
+        <h2>About Simply Construction</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3xl); align-items: center;"
+        data-reveal>
+        <div>
+          <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800"
+            alt="Construction professional at work" width="800" height="500" loading="lazy"
+            style="border-radius: var(--radius-md); width: 100%; height: auto;">
+        </div>
+        <div>
+          <p>Since 1953, Simply Construction has been a trusted name in building excellence. We combine decades of
+            experience with modern techniques to deliver projects that stand the test of time.</p>
+          <p>Our mission is to build trust through quality, transparency, and dedication. We work closely with our
+            clients from concept to completion, ensuring every detail meets the highest standards.</p>
+          <a href="about.html" class="btn btn--primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services preview -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title" data-reveal>
+        <p class="subtitle">What We Offer</p>
+        <h2>Our Services</h2>
+      </div>
+      <div class="services-grid">
+        <a href="services.html#residential" class="service-card" data-reveal>
+          <div class="service-card__icon">&#127968;</div>
+          <h3 class="service-card__title">Residential Construction</h3>
+          <p class="service-card__text">Custom homes and multi-family developments.</p>
+        </a>
+        <a href="services.html#commercial" class="service-card" data-reveal>
+          <div class="service-card__icon">&#127970;</div>
+          <h3 class="service-card__title">Commercial Building</h3>
+          <p class="service-card__text">Offices, retail, and industrial facilities.</p>
+        </a>
+        <a href="services.html#renovation" class="service-card" data-reveal>
+          <div class="service-card__icon">&#128295;</div>
+          <h3 class="service-card__title">Renovation & Remodeling</h3>
+          <p class="service-card__text">Kitchen, bathroom, and full home renovations.</p>
+        </a>
+        <a href="services.html#interior" class="service-card" data-reveal>
+          <div class="service-card__icon">&#127912;</div>
+          <h3 class="service-card__title">Interior Design</h3>
+          <p class="service-card__text">Space planning and custom finishes.</p>
+        </a>
+        <a href="services.html#management" class="service-card" data-reveal>
+          <div class="service-card__icon">&#128203;</div>
+          <h3 class="service-card__title">Project Management</h3>
+          <p class="service-card__text">Timeline, budget, and quality assurance.</p>
+        </a>
+        <a href="services.html#consulting" class="service-card" data-reveal>
+          <div class="service-card__icon">&#128221;</div>
+          <h3 class="service-card__title">Consulting Services</h3>
+          <p class="service-card__text">Feasibility studies and building inspections.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects gallery -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-title" data-reveal>
+        <p class="subtitle">Portfolio</p>
+        <h2>Our Projects</h2>
+      </div>
+      <div class="filter-bar">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="residential">Residential</button>
+        <button type="button" class="filter-btn" data-filter="commercial">Commercial</button>
+        <button type="button" class="filter-btn" data-filter="renovation">Renovation</button>
+      </div>
+      <div class="projects-grid">
+        <a href="project-detail.html?id=1" class="project-card" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600" alt="Modern office complex"
+            loading="lazy">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">Modern Office Complex</h3>
+            <span class="btn btn--outline">View Project</span>
+          </div>
+        </a>
+        <a href="project-detail.html?id=2" class="project-card" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600" alt="Luxury villa"
+            loading="lazy">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">Luxury Residential Villa</h3>
+            <span class="btn btn--outline">View Project</span>
+          </div>
+        </a>
+        <a href="project-detail.html?id=3" class="project-card" data-category="renovation">
+          <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=600" alt="Shopping mall"
+            loading="lazy">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">Shopping Mall Renovation</h3>
+            <span class="btn btn--outline">View Project</span>
+          </div>
+        </a>
+        <a href="project-detail.html?id=4" class="project-card" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=600" alt="Industrial warehouse"
+            loading="lazy">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">Industrial Warehouse</h3>
+            <span class="btn btn--outline">View Project</span>
+          </div>
+        </a>
+        <a href="project-detail.html?id=5" class="project-card" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600" alt="School building"
+            loading="lazy">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">School Building</h3>
+            <span class="btn btn--outline">View Project</span>
+          </div>
+        </a>
+        <a href="project-detail.html?id=6" class="project-card" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600" alt="Residential home"
+            loading="lazy">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">Family Home</h3>
+            <span class="btn btn--outline">View Project</span>
+          </div>
+        </a>
+        <a href="project-detail.html?id=7" class="project-card" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600" alt="Hospital extension"
+            loading="lazy">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">Hospital Extension</h3>
+            <span class="btn btn--outline">View Project</span>
+          </div>
+        </a>
+        <a href="project-detail.html?id=8" class="project-card" data-category="renovation">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600" alt="Historic restoration"
+            loading="lazy">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">Historic Restoration</h3>
+            <span class="btn btn--outline">View Project</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-reveal>
+          <div class="stat-item__number" data-counter="70" data-counter-suffix="+">0</div>
+          <div class="stat-item__label">Years Experience</div>
+        </div>
+        <div class="stat-item" data-reveal>
+          <div class="stat-item__number" data-counter="500" data-counter-suffix="+">0</div>
+          <div class="stat-item__label">Projects Completed</div>
+        </div>
+        <div class="stat-item" data-reveal>
+          <div class="stat-item__number" data-counter="350" data-counter-suffix="+">0</div>
+          <div class="stat-item__label">Happy Clients</div>
+        </div>
+        <div class="stat-item" data-reveal>
+          <div class="stat-item__number" data-counter="50" data-counter-suffix="+">0</div>
+          <div class="stat-item__label">Expert Team Members</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title" data-reveal>
+        <p class="subtitle">Testimonials</p>
+        <h2>What Our Clients Say</h2>
+      </div>
+      <div class="testimonials">
+        <div class="testimonials__track">
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">Simply Construction delivered our office building on time and
+                within budget. Their team was professional and communicative throughout. Highly recommend.</blockquote>
+              <div class="testimonial-card__author">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120" alt="John Smith"
+                  class="testimonial-card__avatar" width="60" height="60" loading="lazy">
+                <div>
+                  <div class="testimonial-card__name">John Smith</div>
+                  <div class="testimonial-card__company">Smith & Associates</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">We hired them for a major renovation. The quality of work
+                exceeded our expectations. They truly build trust.</blockquote>
+              <div class="testimonial-card__author">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120" alt="Sarah Johnson"
+                  class="testimonial-card__avatar" width="60" height="60" loading="lazy">
+                <div>
+                  <div class="testimonial-card__name">Sarah Johnson</div>
+                  <div class="testimonial-card__company">Johnson Properties</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">From design to completion, Simply Construction was
+                outstanding. Our new home is everything we dreamed of.</blockquote>
+              <div class="testimonial-card__author">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120" alt="Michael Brown"
+                  class="testimonial-card__avatar" width="60" height="60" loading="lazy">
+                <div>
+                  <div class="testimonial-card__name">Michael Brown</div>
+                  <div class="testimonial-card__company">Brown Development</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials__dots">
+          <button type="button" class="testimonials__dot active" aria-label="Slide 1"></button>
+          <button type="button" class="testimonials__dot" aria-label="Slide 2"></button>
+          <button type="button" class="testimonials__dot" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog preview -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-title" data-reveal>
+        <p class="subtitle">Latest News</p>
+        <h2>From Our Blog</h2>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card" data-reveal>
+          <a href="blog-post.html?id=1" class="blog-card__image">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600" alt="Construction trends"
+              loading="lazy">
+          </a>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">Jan 15, 2026</p>
+            <h3 class="blog-card__title"><a href="blog-post.html?id=1">Top 10 Construction Trends in 2026</a></h3>
+            <p class="blog-card__excerpt">Discover the latest innovations and practices shaping the construction
+              industry this year.</p>
+          </div>
+        </article>
+        <article class="blog-card" data-reveal>
+          <a href="blog-post.html?id=2" class="blog-card__image">
+            <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=600" alt="Choosing a contractor"
+              loading="lazy">
+          </a>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">Jan 10, 2026</p>
+            <h3 class="blog-card__title"><a href="blog-post.html?id=2">How to Choose the Right Contractor</a></h3>
+            <p class="blog-card__excerpt">Key factors to consider when selecting a construction partner for your
+              project.</p>
+          </div>
+        </article>
+        <article class="blog-card" data-reveal>
+          <a href="blog-post.html?id=3" class="blog-card__image">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600" alt="Safety first"
+              loading="lazy">
+          </a>
+          <div class="blog-card__content">
+            <p class="blog-card__meta">Jan 5, 2026</p>
+            <h3 class="blog-card__title"><a href="blog-post.html?id=3">Safety First: Our Commitment to Worker Safety</a>
+            </h3>
+            <p class="blog-card__excerpt">How we maintain the highest safety standards on every job site.</p>
+          </div>
+        </article>
+      </div>
+      <p class="text-center" style="margin-top: var(--space-2xl);">
+        <a href="blog.html" class="btn btn--primary">Read All Articles</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>Simply Construction</h4>
+          <p>Building trust since 1953. Quality construction for residential, commercial, and renovation projects.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><span aria-hidden="true">f</span></a>
+            <a href="#" aria-label="Twitter"><span aria-hidden="true">𝕏</span></a>
+            <a href="#" aria-label="LinkedIn"><span aria-hidden="true">in</span></a>
+            <a href="#" aria-label="Instagram"><span aria-hidden="true">📷</span></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#residential">Residential</a></li>
+            <li><a href="services.html#commercial">Commercial</a></li>
+            <li><a href="services.html#renovation">Renovation</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li>123 Construction Ave, Build City</li>
+            <li><a href="tel:+0012455258365">(001) 2455 258 365</a></li>
+            <li><a href="mailto:info@simplyconstruction.com">info@simplyconstruction.com</a></li>
+            <li>7:30 AM - 9:30 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Simply Construction. All rights reserved.</p>
+        <p>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quote modal -->
+  <div class="modal" id="quote-modal" aria-hidden="true">
+    <div class="modal__content">
+      <div class="modal__header">
+        <h2>Request a Quote</h2><button type="button" class="modal__close" aria-label="Close">&times;</button>
+      </div>
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="form-group"><label>Full Name <span class="required">*</span></label><input type="text" name="name"
+              required></div>
+          <div class="form-group"><label>Email <span class="required">*</span></label><input type="email" name="email"
+              required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Phone <span class="required">*</span></label><input type="tel" name="phone"
+              required></div>
+          <div class="form-group"><label>Service</label><select name="service">
+              <option>Residential</option>
+              <option>Commercial</option>
+              <option>Renovation</option>
+              <option>Other</option>
+            </select></div>
+        </div>
+        <div class="form-group"><label>Message <span class="required">*</span></label><textarea name="message" rows="4"
+            required></textarea></div>
+        <button type="submit" class="btn btn--primary btn--large">Submit Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Cookie banner -->
+  <div class="cookie-banner">
+    <div class="container">
+      <p>We use cookies to improve your experience. By continuing, you accept our use of cookies.</p>
+      <button type="button" class="btn btn--primary">Accept</button>
+    </div>
+  </div>
+
+  <!-- Chatbot -->
+  <button type="button" class="chatbot-trigger" aria-label="Open chat">
+    <span class="chat-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+      </svg>
+    </span>
+    <span class="badge"></span>
+  </button>
+  <div class="chatbot-window">
+    <div class="chatbot-window__header">
+      <h2 class="chatbot-window__title">Simply Assistant</h2>
+      <div class="chatbot-window__actions">
+        <button type="button" data-chatbot-minimize aria-label="Minimize">−</button>
+        <button type="button" data-chatbot-close aria-label="Close">×</button>
+      </div>
+    </div>
+    <div class="chatbot-window__body"></div>
+    <div class="chatbot-window__footer">
+      <div class="chatbot-input-row">
+        <input type="text" placeholder="Type your message..." aria-label="Message">
+        <button type="button" class="chatbot-send" aria-label="Send">➤</button>
+      </div>
+      <div class="chatbot-transfer">
+        <button type="button">Talk to Human</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+
+</html>
