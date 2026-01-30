@@ -1,4 +1,4 @@
-# Simply Construction – Prototype
+# Prototype – Prototype
 
 **Version:** 1.0.0  
 **Stack:** Pure HTML5, CSS3, Vanilla JavaScript (no frameworks)  
@@ -149,3 +149,4 @@ Modern browsers (Chrome, Firefox, Safari, Edge). Uses CSS Grid, Flexbox, and ES5
 
 Prototype for client presentation. Replace placeholder content and assets before production.  
 For questions or backend integration, refer to your development team or project brief.
+

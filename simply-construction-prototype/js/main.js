@@ -1,5 +1,5 @@
 /**
- * Simply Construction - Main Entry Point
+ * Prototype - Main Entry Point
  * Version: 1.0.0
  */
 
@@ -118,7 +118,7 @@
           index = 0;
           const msg = document.createElement('div');
           msg.style.cssText = 'position:fixed;top:20px;left:50%;transform:translateX(-50%);background:var(--color-primary-accent);color:var(--color-primary-dark);padding:16px 24px;border-radius:8px;font-weight:bold;z-index:9999;animation:fadeIn 0.3s ease;';
-          msg.textContent = '🏗️ Simply Construction - Building Excellence Since 1953!';
+          msg.textContent = '🏗️ Prototype - Building Excellence Since 1953!';
           document.body.appendChild(msg);
           setTimeout(function () {
             msg.remove();
@@ -149,3 +149,4 @@
     init();
   }
 })();
+

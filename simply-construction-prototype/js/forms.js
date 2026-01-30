@@ -1,5 +1,5 @@
 /**
- * Simply Construction - Form Validation & UX
+ * Prototype - Form Validation & UX
  * Version: 1.0.0
  */
 
@@ -202,3 +202,4 @@
     initRegisterSteps();
   });
 })();
+

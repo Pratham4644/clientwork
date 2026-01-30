@@ -1,5 +1,5 @@
 /**
- * Simply Construction - Navigation
+ * Prototype - Navigation
  * Version: 1.0.0
  */
 
@@ -94,3 +94,4 @@
     initSearchModal();
   });
 })();
+

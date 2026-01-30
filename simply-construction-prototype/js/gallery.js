@@ -1,5 +1,5 @@
 /**
- * Simply Construction - Image Gallery, Lightbox, Project Filter
+ * Prototype - Image Gallery, Lightbox, Project Filter
  * Version: 1.0.0
  */
 
@@ -133,3 +133,4 @@
     initFaqAccordion();
   });
 })();
+

@@ -1,5 +1,5 @@
 /**
- * Simply Construction - Scroll Animations & Counter
+ * Prototype - Scroll Animations & Counter
  * Version: 1.0.0
  */
 
@@ -99,3 +99,4 @@
     initCounters();
   });
 })();
+

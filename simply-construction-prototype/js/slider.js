@@ -1,5 +1,5 @@
 /**
- * Simply Construction - Hero Slider & Testimonials Carousel
+ * Prototype - Hero Slider & Testimonials Carousel
  * Version: 1.0.0
  */
 
@@ -92,3 +92,4 @@
     initTestimonials();
   });
 })();
+
